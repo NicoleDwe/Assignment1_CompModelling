@@ -272,7 +272,11 @@ ggplot(Fix, aes(MeanX, MeanY, color = Fix$FixationNo)) +
 ```
 
 ![](Data_analysis_files/figure-markdown_github/VISUAL%20FORAGING:%20SACCADE%20AMPLITUDE%20VISUALISATIONS-5.png)
-\#\# Experiment 2: Social Engagement \#\#\# Analysis
+
+Experiment 2: Social Engagement
+-------------------------------
+
+### Analysis
 
 ``` r
 #question: does increased engagement (through directionality and eyebrow movement) have an effect on pupil size (arousal)?
