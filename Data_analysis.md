@@ -493,12 +493,22 @@ exp(8.76+0.03) #6568.232 away, direct
     ## [1] 6568.232
 
 ``` r
-#faster way: or make predictions and then 
+#faster way: or make predictions and then exp
 Social$Preds <- predict(ms2)
 Goback <- Social %>%
   group_by(Video_Eyebrow, Video_Direction) %>% 
   summarize((exp(mean(Preds))))
+Goback
 ```
+
+    ## # A tibble: 4 x 3
+    ## # Groups:   Video_Eyebrow [2]
+    ##   Video_Eyebrow Video_Direction `(exp(mean(Preds)))`
+    ##   <fct>         <fct>                          <dbl>
+    ## 1 eyebrow       away                           6373.
+    ## 2 eyebrow       direct                         6563.
+    ## 3 no eyebrow    away                           6388.
+    ## 4 no eyebrow    direct                         6578.
 
 ### Visualisations
 
