@@ -1,5 +1,9 @@
-\#Assignment 1: Eye Tracking Anaylsis \#\#\#Study Group: Astrid Rybner,
-Kata Molnar, Nicole Dwenger and Sofie Rødkjær \#\#\#Feburary 27, 2020
+Assignment 1: Eye Tracking Anaylsis
+===================================
+
+### Study Group: Astrid Rybner, Kata Molnar, Nicole Dwenger and Sofie Rødkjær
+
+### Feburary 27, 2020
 
 ``` r
 #load data
@@ -42,7 +46,10 @@ Samples <- read_csv("Samples_merged.csv", col_types = cols(
   filter(Time<=41202)
 ```
 
-\#\#Experiment 1: Top Down Effects on Eye Movement \#\#\#Analysis
+Experiment 1: Top Down Effects on Eye Movement
+----------------------------------------------
+
+### Analysis
 
 ``` r
 #question: do top down constraints (i.e. task) affect eye movement?
@@ -191,7 +198,7 @@ exp(1.46430)
 #4.324515 for search
 ```
 
-\#\#\#Visualisations
+### Visualisations
 
 ``` r
 #density plot for saccade amplitude in the 2 conditions by participant
@@ -265,7 +272,7 @@ ggplot(Fix, aes(MeanX, MeanY, color = Fix$FixationNo)) +
 ```
 
 ![](Data_analysis_files/figure-markdown_github/VISUAL%20FORAGING:%20SACCADE%20AMPLITUDE%20VISUALISATIONS-5.png)
-\#\#Experiment 2: Social Engagement \#\#\#Analysis
+\#\# Experiment 2: Social Engagement \#\#\# Analysis
 
 ``` r
 #question: does increased engagement (through directionality and eyebrow movement) have an effect on pupil size (arousal)?
@@ -489,7 +496,7 @@ Goback <- Social %>%
   summarize((exp(mean(Preds))))
 ```
 
-\#\#\#Visualisations
+### Visualisations
 
 ``` r
 #add column combining the two factors
