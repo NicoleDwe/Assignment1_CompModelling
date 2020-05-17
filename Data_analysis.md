@@ -3,7 +3,7 @@ Assignment 1: Eye Tracking Anaylsis
 
 ### Study Group: Astrid Rybner, Kata Molnar, Nicole Dwenger and Sofie Rødkjær
 
-### Feburary 27, 2020
+### February 27, 2020
 
 ``` r
 #load data
